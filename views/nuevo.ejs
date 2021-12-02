@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html> 
+    <body>
+        <form action="/edit" method="post">
+            <select name="Producto" id="Producto">
+                <option value="Computadora">Computadora</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Impresora">Impresora</option>
+                <option value="Camara">Camara</option>
+                <option value="Audifonos">Audifonos</option>
+                <option value="USB">USB</option>
+                <option value="Cable">Cable</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Aire Comprimido">Aire Comprimido</option>
+                <option value="Cerradura digital">Cerradura digital</option>
+                <option value="Antena">Antena</option>
+            </select>
+            <br>
+            <input type="number" name="Precio" id="Precio" placeholder="Precio del producto" required min="100" max="14000">
+            <br> <br>
+            <button type="submit" id="Agregar" >Agregar</button>
+        </form>
+        <br>
+        <a href="/view">Volver</a>
+    </body>
+</html>

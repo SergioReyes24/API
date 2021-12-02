@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+         <h2>Productos:</h2>
+         <% Objetos.forEach(function(objeto){%>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><%= objeto.Producto %>: $<%= objeto.Precio %>
+                            <br>
+                            <a href="/edit/<%= objeto.id %>">Editar</a> ||
+                            <a href="/delete/<%= objeto.id %>">Eliminar</a>
+                        </td>
+                    </tr>
+                    <br>
+                </tbody>
+            </table>
+         <%})%>
+            <br>
+         <a href="/">Inicio</a>
+    </body>
+</html>
